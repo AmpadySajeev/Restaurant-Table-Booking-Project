@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="table-div p-4 bg-primary text-light rounded-4 mx-4 my-2">
+        <table class="table">
+            <div class="display-5">All Restaurants</div>
+            <hr class="bg-light opacity-75" >
+            <thead>
+            <tr class="text-light">
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Opening time</th>
+                <th scope="col">Closing time</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for restaurant in restaurants %}
+                <tr class="text-light">
+                    <th scope="row"> {{restaurant.id}} </th>
+                    <td><a href="{% url 'rest_profile_admin' restaurant.slug %}" class="nav-link">{{ restaurant.restaurant_name }}</a></td>
+                    <td> {{restaurant.location}} </td>
+                    <td> {{restaurant.opening_time}} </td>
+                    <td>{{restaurant.closing_time}}</td>
+                    <td>
+                        <div>
+                            <a href="{% url 'rest_edit_admin' restaurant.slug %}" class="btn btn-sm btn-warning">Edit</a>
+                            <a href="{% url 'rest_delete_admin' restaurant.slug %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>  
+</body>
+</html>

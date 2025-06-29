@@ -1,0 +1,11 @@
+::-webkit-scrollbar{
+    display: none;
+}
+.body-right {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.form-div {
+    max-height: 100vh;
+    overflow-y: auto;
+}

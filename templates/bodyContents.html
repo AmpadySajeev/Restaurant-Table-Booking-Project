@@ -1,0 +1,119 @@
+
+<!-- hero section -->
+<div class="hero d-flex align-items-end ">
+    <div class="container">
+        <div class="display-5 text-light text-center border rounded-2 mb-5 ">
+            <p>Discover & Book Your Perfect Dining Experience</p>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Restaurants list -->
+ <section id="restaurant-list">
+    <div class="rest-list  p-3 bg-dark">
+        <div class="container">
+            <div class="recommended-head p-2 d-flex justify-content-between bg-light rounded-pill px-3 ">
+                <h3 class="h4 px-2">Recommended Restaurants</h3>
+                <!-- <a href="" class="text-end btn btn-danger rounded-pill px-4">Add Restaurant</a> -->
+            </div>
+
+            <div class="row my-3 justify-content-center align-items-center">
+                {% for restaurant in restaurants %}
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/pexels-2.jpg" alt="Rest-img" class=" card-img border w-90 rounded">
+                            <h4 class="card-title mt-2">{{restaurant.restaurant_name}}</h4>
+                            <p class="card-subtitle small text-muted"> {{restaurant.description}} </p>
+                            <a href="{% url 'rest-page' restaurant.slug %}" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+                <!-- <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/pexels-1.jpg" alt="Rest-img" class=" card-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Restaurant #2</h4>
+                            <p class="card-subtitle small text-muted">Your restaurant writings</p>
+                            <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/pexels-4.jpg" alt="Rest-img" class=" card-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Restaurant #3</h4>
+                            <p class="card-subtitle small text-muted">Your restaurant writings</p>
+                            <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/pexels-2.jpg" alt="Rest-img" class=" card-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Restaurant #4</h4>
+                            <p class="card-subtitle small text-muted">Your restaurant writings</p>
+                            <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/pexel-5.jpg" alt="Rest-img" class=" card-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Restaurant #5</h4>
+                            <p class="card-subtitle small text-muted">Your restaurant writings</p>
+                            <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/pexel-6.jpg" alt="Rest-img" class=" card-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Restaurant #6</h4>
+                            <p class="card-subtitle small text-muted">Your restaurant writings</p>
+                            <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/pexel-7.jpg" alt="Rest-img" class=" card-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Restaurant #7</h4>
+                            <p class="card-subtitle small text-muted">Your restaurant writings</p>
+                            <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/pexels-2.jpg" alt="Rest-img" class=" card-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Restaurant #8</h4>
+                            <p class="card-subtitle small text-muted">Your restaurant writings</p>
+                            <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a>
+                        </div>
+                    </div>
+                </div> -->
+                
+                
+            </div>
+
+        </div>
+        <hr class="border-light border-1 ">
+    </div>
+    
+</section>

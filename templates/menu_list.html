@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Menu Card -->
+<div class="container ">
+    <div class="row d-flex justify-content-center">
+
+ 
+        <div class="col mt-5 mb-5">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-body">
+                    <div class="heading d-flex justify-content-between align-items-center">
+                        <h5 class="card-title text-success fw-bold">Menu Management</h5>
+                        <a href="{% url 'add_menu_item' %}" class="btn btn-outline-success">Add New Menu Item</a>
+                    </div>
+                    <hr class="border border-success opacity-75">
+                    <ul class="list-group">
+                        
+                        {% for item in menu_items %}
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            {{item.name}} - {{item.price}} 
+                            <div class="border px-4 d-flex justify-content-center align-items-center">
+                                <p>Availability : </p>
+                                {% if item.available %}
+                                <i class="fas fa-check text-success " ></i>
+                                {% else %}
+                                <i class="fas fa-times text-danger"></i>
+                                {% endif %}
+                            </div> 
+                                
+                            <div>
+                                <a href="{% url 'edit_menu_item' item.id %}" class="btn btn-sm btn-outline-primary">Edit</a>
+                                <a href="{% url 'delete_menu_item' item.id %}" class="btn btn-sm btn-outline-danger">Delete</a>
+                            </div>
+                        </li>
+                        {% endfor %}
+                        
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

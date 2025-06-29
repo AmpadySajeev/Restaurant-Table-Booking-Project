@@ -1,0 +1,136 @@
+{% load static %}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'css/user-details.css' %}">
+
+<div class="container bootdey flex-grow-1 container-p-y">
+
+            <div class="media align-items-center py-3 mb-3">
+              <div class="media-body ml-4">
+                <h4 class="font-weight-bold mb-0">Ameen Ali<span class="text-muted font-weight-normal">@ameen_222</span></h4>
+                <div class="text-muted mb-2">ID: 775423</div>
+                <a href="javascript:void(0)" class="btn btn-primary btn-sm">Edit</a>&nbsp;
+                <a href="{% url 'staff-profile' %}" class="btn btn-default btn-sm">Profile</a>&nbsp;
+                <a href="javascript:void(0)" class="btn btn-default btn-sm icon-btn"><i class="fa fa-mail"></i></a>
+              </div>
+            </div>
+
+            <div class="card mb-4 ">
+              <div class="card-body">
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+                      <td>Registered:</td>
+                      <td>22/12/2024</td>
+                    </tr>
+                    <tr>
+                      <td>Role:</td>
+                      <td>Staff</td>
+                    </tr>
+                    <tr>
+                      <td>Status:</td>
+                      <td><span class="badge badge-outline-success">Active</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <hr class="border-light m-0">
+              <div class="table-responsive">
+                <table class="table card-table m-0">
+                  <tbody>
+                    <tr>
+                      <th>Module Permission</th>
+                      <th>Read</th>
+                      <th>Write</th>
+                      <th>Create</th>
+                      <th>Delete</th>
+                    </tr>
+                    <tr>
+                      <td>Staffs</td>
+                      <td><span class="fa fa-check text-primary"></span></td>
+                      <td><span class="fa fa-check text-primary"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                      <td><span class="fa fa-times text-light"></span></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="row no-gutters row-bordered">
+                <div class="d-flex col-md align-items-center">
+                  <a href="javascript:void(0)" class="card-body d-block text-body">
+                    <div class="text-muted small line-height-1">Total Days Worked</div>
+                    <div class="text-xlarge">64</div>
+                  </a>
+                </div>
+
+                <div class="d-flex col-md align-items-center">
+                    <a href="javascript:void(0)" class="card-body d-block text-body">
+                      <div class="text-muted small line-height-1">Rating</div>
+                      <div class="text-xlarge">4.2</div>
+                    </a>
+                  </div>
+              </div>
+              <hr class="border-light m-0">
+              <div class="card-body">
+
+                <table class="table user-view-table m-0 ">
+                  <tbody>
+                    <tr>
+                      <td>Username:</td>
+                      <td>ameen_222</td>
+                    </tr>
+                    <tr>
+                      <td>Name:</td>
+                      <td>Ameen Ali</td>
+                    </tr>
+                    <tr>
+                      <td>E-mail:</td>
+                      <td>ameen_ask222@mail.com</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+
+                
+
+                <h6 class="mt-4 mb-3">Personal info</h6>
+
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+                      <td>Birthday:</td>
+                      <td>December 23, 1998</td>
+                    </tr>
+                    <tr>
+                      <td>State:</td>
+                      <td>Kerala</td>
+                    </tr>
+                    <tr>
+                      <td>Address:</td>
+                      <td>Home P.O Region, District</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h6 class="mt-4 mb-3">Contacts</h6>
+
+                <table class="table user-view-table m-0">
+                  <tbody>
+                    <tr>
+                      <td>Phone:</td>
+                      <td>+0 (123) 456 7891</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                
+
+              </div>
+            </div>
+
+          </div>

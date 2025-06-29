@@ -1,0 +1,110 @@
+Restaurant page menu cards initially designed --->
+
+<div class="container">
+            <div class="recommended-head p-2 d-flex justify-content-between bg-light rounded-pill px-3 ">
+                <h3 class="h4 px-2">Main Menu</h3>
+                <!-- <a href="" class="text-end btn btn-danger rounded-pill px-4">Add Restaurant</a> -->
+            </div>
+        </div>
+        <hr class="border-light border-1">
+
+<div class="row my-3 justify-content-center align-items-center">
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/food-1.jpg" alt="Rest-img" class=" card-menu-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Menu #1</h4>
+                            <p class="card-subtitle small text-muted">Your menu writings</p>
+                            <p class="card-subtitle small mt-2">Price</p>
+                            <!-- <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/food-2.jpg" alt="Rest-img" class=" card-menu-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Menu #2</h4>
+                            <p class="card-subtitle small text-muted">Your menu writings</p>
+                            <p class="card-subtitle small mt-2">Price</p>
+                            <!-- <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/food-3.jpg" alt="Rest-img" class=" card-menu-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Menu #3</h4>
+                            <p class="card-subtitle small text-muted">Your menu writings</p>
+                            <p class="card-subtitle small mt-2">Price</p>
+                            <!-- <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/food-1.jpg" alt="Rest-img" class=" card-menu-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Menu #4</h4>
+                            <p class="card-subtitle small text-muted">Your menu writings</p>
+                            <p class="card-subtitle small mt-2">Price</p>
+                            <!-- <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/food-2.jpg" alt="Rest-img" class=" card-menu-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Menu #5</h4>
+                            <p class="card-subtitle small text-muted">Your menu writings</p>
+                            <p class="card-subtitle small mt-2">Price</p>
+                            <!-- <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/food-3.jpg" alt="Rest-img" class=" card-menu-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Menu #6</h4>
+                            <p class="card-subtitle small text-muted">Your menu writings</p>
+                            <p class="card-subtitle small mt-2">Price</p>
+                            <!-- <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/food-1.jpg" alt="Rest-img" class=" card-menu-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Menu #7</h4>
+                            <p class="card-subtitle small text-muted">Your menu writings</p>
+                            <p class="card-subtitle small mt-2">Price</p>
+                            <!-- <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 p-2">
+                    <div class="card">
+                        <div class="card-body text-center py-4 border-0">
+                            <img src="../static/images/food-2.jpg" alt="Rest-img" class=" card-menu-img border w-90 rounded">
+                            <h4 class="card-title mt-2">Menu #8</h4>
+                            <p class="card-subtitle small text-muted">Your menu writings</p>
+                            <p class="card-subtitle small mt-2">Price</p>
+                            <!-- <a href="" class="btn btn-outline-danger btn-sm mt-3 px-3 rounded-pill">Select</a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="">
+    <div class="table-div p-4 bg-primary text-light rounded-4 mx-4">
+        <table class="table">
+            <div class="display-5">All Users</div>
+            <hr class="bg-light opacity-75" >
+
+            <thead class="text-light">
+            <tr class="text-light">
+                <th  scope="col">ID</th>
+                <th scope="col">Username</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">role</th>
+                <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for alluser in all_users %}
+                <tr class="text-light">
+                    <th  scope="row">{{alluser.id}}</th>
+                    <td><a href="{% url 'user-profile-admin' alluser.id %}" class="nav-link">{{alluser.username}}</a></td>
+                    <td>{{alluser.email}}</td>
+                    <td>{{alluser.role}}</td>
+                    <td>
+                        <div>
+                            <a href="{% url 'user_edit_admin' alluser.id %}" class="btn btn-sm btn-warning">Edit</a>
+                            <a href="{% url 'user_delete_admin' alluser.id %}" class="btn btn-sm btn-danger">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>  
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="table-div p-4 bg-primary text-light rounded-4 mx-4 my-2">
+        <table class="table">
+            <div class="display-5">All Restaurant Owners</div>
+            <hr class="bg-light opacity-75" >
+
+            <thead>
+            <tr class="text-light">
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Restaurant</th>
+                <th scope="col">Email</th>
+                <th scope="col">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+                {% for restaurant in restaurants %}
+                    <tr class="text-light">
+                        <th scope="row">{{restaurant.user.id}}</th>
+                        <td><a href="" class="nav-link">{{restaurant.user}}</a></td>
+                        <td> {{restaurant.restaurant_name}} </td>
+                        <td>{{restaurant.user.email}}</td>
+                        <td>
+                            <div>
+                                <a href="" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="" class="btn btn-sm btn-danger">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>  
+</body>
+</html>
